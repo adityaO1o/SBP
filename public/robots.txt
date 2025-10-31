@@ -1,0 +1,23 @@
+User-agent: *
+Disallow:
+
+# Block common crawling of parameters to save crawl budget (adjust if you have such parameters)
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*utm_
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap location
+Sitemap: https://mohitoverseas.com/sitemap.xml
